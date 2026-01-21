@@ -1,0 +1,24 @@
+{
+  "project_name": "Job Application Bot",
+  "version": "1.0.0",
+  "last_updated": "2026-01-21T19:47:00+05:30",
+  "architecture": {
+    "scraper": "Firecrawl based scraping of job descriptions",
+    "tailor": "Gemini-powered resume tailoring using local LaTeX base",
+    "renderer": "Tectonic for LaTeX to PDF compilation",
+    "tracker": "Google Sheets for logging, Google Drive (OAuth) for storage",
+    "applier": "Playwright/Browser automation for platform submission"
+  },
+  "key_locations": {
+    "resume_base": "data/resume_base.tex",
+    "output_dir": "~/Desktop/Application/",
+    "tracking_sheet": "GOOGLE_SHEET_ID in .env",
+    "drive_folder": "GOOGLE_DRIVE_FOLDER_ID in .env"
+  },
+  "current_status": "Batch processing initiated. OAuth fully configured and verified. Project ready for replication.",
+  "replication_ready": true,
+  "history": {
+    "artifacts_path": ".antigravity/history/",
+    "media_path": ".antigravity/media/"
+  }
+}
