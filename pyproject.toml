@@ -1,0 +1,21 @@
+[project]
+name = "job-application-agent"
+version = "0.1.0"
+description = "Automated job application agent"
+requires-python = ">=3.9"
+dependencies = [
+    "firecrawl-py",
+    "google-api-python-client",
+    "google-auth-httplib2",
+    "google-auth-oauthlib",
+    "gspread",
+    "markdown",
+    "weasyprint",
+    "fpdf",
+    "jinja2",
+    "python-dotenv",
+    "google-generativeai"
+]
+
+[tool.setuptools]
+packages = ["src"]

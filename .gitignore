@@ -1,0 +1,12 @@
+__pycache__/
+*.pdf
+*.tex
+*.aux
+*.log
+*.out
+*.xdv
+token.json
+client_secrets.json
+credentials.json
+.env
+Application/
