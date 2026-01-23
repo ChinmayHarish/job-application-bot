@@ -1,13 +1,20 @@
-# Job Application Bot (AI-Powered)
+# Job Application Bot (Simplified)
 
-An automated job application agent designed to scrape job descriptions, tailor resumes (LaTeX), compile PDFs, and track applications via Google Sheets and Drive.
+A streamlined, AI-driven system for rapid resume tailoring, compilation, and storage.
 
-## 🚀 Key Features
-- **Firecrawl Scraping**: robust JD extraction.
-- **Gemini Tailoring**: Intelligent resume adjustment based on the target JD.
-- **Tectonic Rendering**: Smooth LaTeX-to-PDF compilation.
-- **Google Tracker**: Automatic logging to Sheets and storage in Drive via OAuth 2.0.
-- **Dynamic Storage**: Resumes organized on the Desktop in dated subfolders.
+## 🚀 "JD Only" Workflow
+
+Provide just a **Job Description (JD)** and the bot will:
+1.  **Tailor**: Optimize your LaTeX resume with ATS keywords (zero fabrication).
+2.  **Adaptive Render**: Automatically fits your resume to a **single page**. If it's too long, the bot dynamically tightens margins and spacing.
+3.  **Local Save**: Archive files to `~/Desktop/job applications/[Date]`. (Only PDF shown to avoid clutter).
+4.  **Google Drive**: Upload to Drive and log the link for easy tracking.
+
+### Quick Start
+```bash
+export PYTHONPATH=.
+python3 src/agents/manager_agent.py "We are looking for a Senior PM..."
+```
 
 ## 📦 Replication & Portability (The .antigravity folder)
 This repository contains a **Context Capsule** in the `.antigravity/` folder. This is designed to allow any future agent to pick up exactly where we left off.
